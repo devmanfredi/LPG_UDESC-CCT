@@ -2,33 +2,42 @@
 #include "lib.h"
 
 int main() {
-    int o, n;
+    int o, n,i;
     float a, b;
-    printf("Aqui o patrao eh vc. Quer produto [1], soma [2], diferenca [3], divisao [4] ou um numero da serie de Fibonacci [5] ? ");
+    printf("\tCALCULADORA E FIBONACCI\t\n");
+    printf("\n");
+    printf("1 -> PRODUTO\n");
+    printf("2 -> SOMA\n");
+    printf("3 -> DIFERENCA\n");
+    printf("4 -> DIVISAO\n");
+    printf("5 -> FIBONACCI\n");
     scanf("%d", &o);
     if (o != 5) {
-        printf("Entre o primeiro: ");
+        printf("Digite o primeiro: ");
         scanf("%f", &a);
-        printf("Entre o segundo: ");
+        printf("Digite o segundo: ");
         scanf("%f", &b);
     }
     switch (o) {
         case 1:
-            printf("%f", prod(a, b));
+            printf("Resultado : %f", prod(a, b));
             break;
         case 2:
-            printf("%f", soma(a, b));
+            printf("Resultado : %f", soma(a, b));
             break;
         case 3:
-            printf("%f", dif(a, b));
+            printf("Resultado : %f", dif(a, b));
             break;
         case 4:
-            printf("%f", divi(a, b));
+            printf("%Resultado : f", divi(a, b));
             break;
         case 5:
-            printf("Entre o numero da sequencia: ");
+        	printf("\n");
+            printf("Digite o tamanho da sequencia: ");
             scanf("%d", &n);
-            printf("%d", fib(n));
+            for (i = 0; i < n; i++){
+    			printf("%d ", fib(i));
+			}
             break;
     }
 
