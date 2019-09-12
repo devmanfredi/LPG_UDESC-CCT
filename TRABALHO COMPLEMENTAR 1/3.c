@@ -5,14 +5,22 @@ int p2 (int n) {
     if (n<2) {
         return 1;
     }
-    for (i=1; i<n; i++) {
+    for (i=1; i<=n; i++) {
         p*=2;
+        printf("%d  ",p);
     }
-    return p;
+    return 1;
 }
 
 int main()
 {
     int n;
+    printf("\tcalculo do n-esimo termo da sequencia\t\n");
+    printf("\n");
+    printf("Digite o tamanho da sequencia : ");
     scanf("%d", &n);
-    printf("%d ", p2(n));
+    printf("\n");
+    printf("\tResultado\t\n");
+    p2(n);
+    return 1;
+}
