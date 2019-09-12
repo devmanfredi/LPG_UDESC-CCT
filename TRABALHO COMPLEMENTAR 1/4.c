@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//Protótipos
 float prod(float, float);
 float soma(float, float);
 float dif(float, float);
@@ -10,11 +11,15 @@ int main()
     float a, b, r;
     int o;
     while (o!=5) {
-        printf("\n Entre o primeiro numero: ");
+        printf("\nDigite o primeiro numero: ");
         scanf("%f", &a);
-        printf("Entre o segundo numero: ");
+        printf("\nDigite o segundo numero: ");
         scanf("%f", &b);
-        printf("Entre '1' para produto, '2' para soma, '3' para diferenca, '4' para divisao, ou '5' para sair: ");
+        printf("PRODUTO : 1\n");
+        printf("SOMA : 2\n");
+        printf("DIFERENCA : 3\n");
+        printf("DIVISAO : 4\n");
+        printf("SAIR : 5\n");
         scanf("%d", &o);
         switch (o) {
             case 1:
